@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+margin:0;
+padding:0;
+background-color: #f3f0eb;
+}
+
+
+/* Encabezado de la pagina */
+
+
+.encabezado{
+width:100%;
+background-color: #a5b3b5;
+font-family: "Lilita One", serif;
+font-style: normal;
+position: sticky;
+top:0;
+
+}
+
+
+.navegador{
+width:100%;
+display:flex;
+justify-content: space-around;
+z-index:500;
+}
+
+
+
+
+
+.titulo-h2{
+
+font-size: x-large ;
+
+}
+
+
+.lista{
+
+list-style: none;
+transition: transform 0.5s ease;
+
+}
+
+
+.lista:hover{
+    transform: translatey(-3px)
+    
+}
+
+
+.lista a{
+color:whitesmoke;
+text-decoration:none;
+transition:color 0.5s ease, box-shadow 0.3s ease;
+}
+
+.lista a:hover{
+
+    color: rgb(26, 51, 80);
+}
+
+
+
+
+.contenedor-menu{
+    display:flex;
+    align-items: center;
+
+}
+
+.menu{
+
+display:flex;
+gap:20px;
+align-items: center;
+}
+
+
+/* Menu desplegable */
+
+
+#btn-abrir{
+display:none;
+font-size: xx-large; 
+border:0;
+background-color: transparent;
+ position:absolute;
+left: 80%;
+top:22px; 
+z-index:200;
+
+
+}
+
+
+#btn-cerrar{
+display:none;
+border:0;
+background-color: transparent;
+}
+
+
+/* Contenido responsive del encabezado */
+
+
+@media(max-width:800px){
+
+.contenedor-menu{
+
+display:none;
+
+}
+
+.navegador{
+    
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index:1000;
+}
+
+.contenedor-titulo{
+
+    padding: 10px;
+    transform: translatex(10%);
+}
+
+
+
+#btn-abrir{
+
+display:block;
+z-index:1200;
+
+}
+
+
+.contenedor-menu.visible{
+display: block;
+}
+
+
+.contenedor-menu{
+ position:absolute;
+top:70px;
+left:0;
+margin-top: 0px;
+width: 100%;
+
+
+
+}
+
+
+
+#Menu{
+
+    flex-direction: column;
+    column-gap: 20px;
+    background-color: #a5b3b5;
+
+}
+
+
+#btn-cerrar{
+    display:block;
+}
+
+#btn-cerrar{
+
+color: white;
+font-size: xx-large;
+margin-bottom:10px;
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Contenido de la pagina  */
+
+
+
+
+.contenedor-img-1{
+
+margin:0;
+
+}
+
+
+.imagen-Jesus{
+
+width:100%;
+height:500px;
+object-fit: cover;
+
+}
+
+
+/* Secciones - 4llaves */
+
+
