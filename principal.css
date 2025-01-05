@@ -5,7 +5,7 @@
 body{
 margin:0;
 padding:0;
-background-color: #f3f0eb;
+background-color: #f1f1f1;
 }
 
 
@@ -225,12 +225,26 @@ object-fit: cover;
 }
 
 
+
+/* Relleno */
+
+.relleno{
+
+    width: 100%;
+    height: 400px;
+    background-color: #f1f1f1;
+
+}
+
+
+
+
 /* Secciones - 4llaves */
 
 
 
 .seccion{
-height: 100vh; /* Altura completa de la ventana */
+height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -251,7 +265,10 @@ background-position: center;
 
 .contenido-titulo-frase{
 width: 100%;
+height: 150px;
 display: flex;
+flex-direction: column;
+align-items: center;
 justify-content: center;
 
 
@@ -262,8 +279,6 @@ justify-content: center;
     
     
     }
-
-
 
 
 
@@ -278,8 +293,8 @@ justify-content: center;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(202, 210, 228, 0.994);
-    box-shadow: 03px 3px 9px grey;
+    background-color: rgb(209, 217, 227);
+    box-shadow: 03px 3px 9px rgba(26, 51, 80, 0.502);
     align-items: center;
 
 }
@@ -295,9 +310,19 @@ justify-content: center;
 
 width: 100%;
 display: flex;
-justify-content: space-evenly;
+flex-direction: column;
+align-items: center;
 
 }
+
+.contenido .parrafo-llave1{
+    color:#333333;
+
+}
+
+
+
+
 
 .parrafo-llave1{
 
@@ -313,3 +338,72 @@ border-radius: 5px;
 object-fit: cover;
 
  }
+
+
+
+
+@media(max-width:500px){
+
+.parrafo-llave1{
+
+width:90%;
+
+
+}
+
+
+
+
+}
+
+
+/* Oracion de Fé */
+
+.oracion{
+    width: 80%;
+    height: 400px;
+    margin:0  auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+
+}
+
+
+.oracion-fe{
+text-align: justify;
+
+
+}
+
+
+
+ /* Footer - pie de pagina */
+
+
+.footer{
+
+width:100%;
+background-color: #a5b3b5;
+display: flex;
+justify-content: space-around;
+color:#333333;
+}
+
+
+.contenedor-footer-2{
+
+    display: flex;
+
+
+
+}
+
+.sub-contenedor-22{
+
+margin-left:20px;
+
+}
+
