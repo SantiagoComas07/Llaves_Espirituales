@@ -37,6 +37,35 @@ z-index:500;
 .titulo-h2{
 
 font-size: x-large ;
+color:#171717;
+transition: animation 0.3s ease;
+}
+
+
+.titulo-h2:hover{
+ animation: colores 4s infinite alternate both;
+cursor:pointer;
+
+}
+
+@keyframes colores{
+  0%{
+
+    color:rgb(85, 85, 85);
+
+  }
+  50%{
+    color:#dcdcd0;
+
+  }
+
+
+  100%{
+    color:#efc910;
+
+  }
+
+
 
 }
 
@@ -64,6 +93,7 @@ transition:color 0.5s ease, box-shadow 0.3s ease;
 .lista a:hover{
 
     color: rgb(26, 51, 80);
+    cursor:pointer;
 }
 
 
