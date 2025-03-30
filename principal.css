@@ -32,6 +32,7 @@ border-radius:10px;
 
 }
 
+
 /* 
 background-image: url('img/imagen_principal.jpg');
 background-size: contain; 
@@ -40,13 +41,25 @@ background-position: center; */
 
 
 nav {
-    position:absolute;
+    /* position:absolute;
     width:450px;
     height: 10%;
     margin:20px;
     color: white;
     padding: 15px;
+    display: flex; */
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+     transform: translate(-140%, -220%);
+    /* transform: translate(-90%, -220%); */
+    width: 90%;  /* Ajusta el ancho según el tamaño de la pantalla */
+    max-width: 450px; /* No crecerá más de este tamaño */
+    height: auto; /* Se ajusta según el contenido */
+    padding: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
@@ -64,15 +77,15 @@ h1 {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-ul {
-    list-style: none;
+nav ul {
     display: flex;
     gap: 20px;
     margin: 0px 20px 0px 0px;
     padding: 0;
 }
 
-li {
+ nav li {
+    list-style: none;
     cursor: pointer;
 }
 
@@ -90,9 +103,32 @@ color:whitesmoke;
 
 
 
+    @media (max-width:1300px) {
+
+        header{
+         height: 500px;
+         z-index: 1000;
+        } 
+        nav{
+            width: 320px;
+            height: 30%;
+            flex-direction: column;
+            margin:40px;
+            transform: translate(-61%, -160%);
+            z-index: 1900;
+        }
+        nav ul{
+            margin: 0px 0px 0px 0px;
+            z-index: 1000;
+        }
+    }
+
+
+
+
 /* Main ----- Llave 1 */
 
-.llave1{
+/* .llave1{
 
 display:flex;
 text-align: justify;
@@ -122,115 +158,91 @@ flex-direction: column;
 justify-content: center;
 border-radius: 10px;
 
+} */
+
+.llave {
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    text-align: justify;
+    margin-top: 50px;
+    gap: 20px; 
+}
+
+.llave figure {
+    width: 40%;
+}
+
+.llave figure img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carta {
+    background-color: rgba(122, 0, 0, 0.842);;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px; 
+    width: 50%; 
 }
 
 
 /* Main ----- Llave 2 */
 
-.llave2{
-    display:flex;
-    flex-direction: row-reverse;
-    text-align: justify;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
+#Llave2{
+flex-direction: row-reverse;
+
+
 }
-
-.llave2 figure{
-
-    width: 40%;
-   margin:0;
-   padding:0;
-}
-    
-.llave2 figure img{
-    
-    width:100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-.carta2{
-
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    
-}
-
-/* Main ----- Llave 3 */
-
-.llave3{
-    display:flex;
-    flex-direction: row-reverse;
-    text-align: justify;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-.llave3 figure{
-
-    width: 40%;
-   margin:0;
-   padding:0;
-}
-    
-.llave3 figure img{
-    
-    width:100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.carta3{
-
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    
-    }
 
 /* Main ----- Llave 2 */
 
-.llave4{
-    display:flex;
-    flex-direction: row-reverse;
-    text-align: justify;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
-}
-
-.llave4 figure{
-
-    width: 40%;
-   margin:0;
-   padding:0;
-}
-    
-.llave4 figure img{
-    
-    width:100%;
-    object-fit: cover;
-    border-radius: 10px;
+#Llave4{
+margin-bottom: 100px;
 }
 
 
-.carta4{
+@media(max-width:800px) {
+    .llave{
+        flex-direction: column;
+        z-index: 1000;
 
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    
     }
+    #Llave2{
+        flex-direction: column;
+        z-index: 1000;
+
+    }
+    
+}
+@media(max-width:800px) {
+    .llave{
+        margin-top: 0px;
+        transform: translateY(-120px);
+        z-index: 1000;
+
+    }
+    .carta{
+        width:90%;
+
+    }
+    .llave figure{
+        width: 80%;
+    }
+
+    #Llave4{
+        margin-bottom: 0px;
+    }
+    
+}
+
+
 /* footer de la pagina */
 
 
